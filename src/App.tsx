@@ -18,7 +18,7 @@ function App() {
           <h1>Live Code Editor</h1>
           <div className="app-controls">
             <ThemeSwitcher />
-            <a href="https://github.com/your-username/live-code-editor" target="_blank" rel="noopener noreferrer" className="github-link">
+            <a href="https://github.com/illker/live-code-editor" target="_blank" rel="noopener noreferrer" className="github-link">
               GitHub
             </a>
           </div>
