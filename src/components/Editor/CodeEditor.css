@@ -1,0 +1,72 @@
+.code-editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-main);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color-light);
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.file-info {
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.empty-editor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.compilation-errors {
+  background-color: rgba(220, 0, 0, 0.15);
+  color: var(--text-error);
+  padding: 8px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  overflow-y: auto;
+  max-height: 120px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.error-item {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(220, 0, 0, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.error-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.error-icon {
+  margin-right: 8px;
+}
+
+.error-message {
+  margin-right: 8px;
+}
+
+.error-location {
+  font-size: 0.8rem;
+  color: #aaa;
+}
